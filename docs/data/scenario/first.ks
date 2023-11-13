@@ -1,24 +1,22 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="エニタイムに行くか悩むトレーニー"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「エニタイムに行くか悩むトレーニー」[l][r]
 
-メロスは激怒した。[l][r]
+トレーニーは悩んだ[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+筋トレに行きたいが眠くて仕方がない[l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+昨日も同じ理由でさぼってしまった[l][r]
 
 [link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_run] →行く [endlink][r]
 [s]
+
 
 *tag_sleep
 
@@ -26,21 +24,94 @@
 
 [bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+トレーニーは死んだように深く眠った。[l][r]
+筋肉は、ひどく衰えた。[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
+
+
 *tag_run
 
-[bg storage=run.jpg time=500]
+[bg storage=gym.png time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+トレーニーはジムについた[l][r]
+トレーニーは今日は脚の日だったことに気が付いた[r]
+[link target=*tag_leg] →スクワットをする [endlink][r]
+[link target=*tag_chest] →胸トレにする [endlink][r]
+[link target=*tag_deltoid] →肩トレにする [endlink][r]
+[s]
+
+
+
+
+*tag_leg
+
+[bg storage=leg.png time=500]
+
+[cm]
+脚から逃げず立ち向かった[l][r]
+これで何も後悔なく寝られる[r]
 
 【 GOOD END 】[l][cm]
+
+[jump target=*start]
+
+
+
+*tag_deltoid
+
+[bg storage=deltoid.png time=500]
+
+[cm]
+脚から逃げて肩を鍛えるのはただのイきりトレーニーだ[r]
+
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+
+
+*tag_chest
+
+[bg storage=chest.png time=500]
+
+[cm]
+脚をさぼった分[r]
+
+[link target=*tag_chest_bad] →いつも通りのトレーニングをする [endlink][r]
+[link target=*tag_chest_good] →いつもよりセット数を多くする [endlink][r]
+[s]
+
+
+
+*tag_chest_good
+
+[bg storage=chest.png time=500]
+
+[cm]
+脚から逃げたとはいえその分頑張ったのはすばらしい[l][r]
+とはいっても脚から逃げるのはヘタレだ[r]
+
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+
+
+*tag_chest_bad
+
+[bg storage=chest.png time=500]
+
+[cm]
+脚から逃げた上にその分取り返そうともしないのは精神が貧弱だ[r]
+
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
